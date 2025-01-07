@@ -28,5 +28,15 @@
       "Blue",
       "Orange"
     ]
+  },
+  {
+    "id": 4,
+    "text": "Who is your favourite Actor?",
+    "options": [
+      "NTR",
+      "Ramcharan",
+      "Alluarjun",
+      "Venkatesh"
+    ]
   }
 ]
