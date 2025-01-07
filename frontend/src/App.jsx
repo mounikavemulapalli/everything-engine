@@ -5,13 +5,11 @@ import UserPanel from "./components/UserPanel";
 
 export default function App() {
   return (
-    <>
-      <Router>
-        <Routes>
-          <Route path='/Admin' element={<AdminPanel />} />
-          <Route path='/user' element={<UserPanel />} />
-        </Routes>
-      </Router>
-    </>
+    <Router>
+      <Routes>
+        <Route path='/Admin' element={<AdminPanel />} />
+        <Route path='/user' element={<UserPanel />} />
+      </Routes>
+    </Router>
   );
 }

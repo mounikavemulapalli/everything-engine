@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import axios from "axios";
 
 function UploadQuestions() {
   const [file, setFile] = useState(null);
   const [error, setError] = useState("");
+  const fileInputRef = useRef(null);
 
   const handleFileChange = (e) => {
     setFile(e.target.files[0]);
@@ -23,6 +24,7 @@ function UploadQuestions() {
       .post("http://localhost:3000/upload-questions", formData)
       .then((response) => {
         console.log("Upload successful:", response.data);
+        fileInputRef.current.value = ""; // Reset the file input
       })
       .catch((error) => {
         console.error("Error uploading questions:", error);
@@ -32,7 +34,7 @@ function UploadQuestions() {
 
   return (
     <div>
-      <input type='file' onChange={handleFileChange} />
+      <input type='file' ref={fileInputRef} onChange={handleFileChange} />
       <button onClick={handleUpload}>Upload Questions</button>
       {error && <p style={{ color: "red" }}>{error}</p>}
     </div>
