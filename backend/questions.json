@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "text": "What is the capital of France?",
+    "options": [
+      "Paris",
+      "London",
+      "Berlin",
+      "Madrids"
+    ]
+  },
+  {
+    "id": 2,
+    "text": "What is the largest planet in our solar system?",
+    "options": [
+      "Earth",
+      "Jupiter",
+      "Saturn",
+      "Mars"
+    ]
+  },
+  {
+    "id": 3,
+    "text": "What is your favourite color?",
+    "options": [
+      "Red",
+      "White",
+      "Blue",
+      "Orange"
+    ]
+  }
+]
